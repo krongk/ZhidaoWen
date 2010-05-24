@@ -1,0 +1,38 @@
+<p>
+  <b>From:</b>
+  <%=h @question.from %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @question.category %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @question.url %>
+</p>
+
+<p>
+  <b>Min title:</b>
+  <%=h @question.min_title %>
+</p>
+
+<p>
+  <b>Max title:</b>
+  <%=h @question.max_title %>
+</p>
+
+<p>
+  <b>Sort:</b>
+  <%=h @question.sort_id %>
+</p>
+
+<p>
+  <b>Is display:</b>
+  <%=h @question.is_display %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

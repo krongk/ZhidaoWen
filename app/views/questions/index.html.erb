@@ -1,0 +1,32 @@
+<h1>Listing questions</h1>
+
+<table>
+  <tr>
+    <th>From</th>
+    <th>Category</th>
+    <th>Url</th>
+    <th>Min title</th>
+    <th>Max title</th>
+    <th>Sort</th>
+    <th>Is display</th>
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td><%=h question.from %></td>
+    <td><%=h question.category %></td>
+    <td><%=h question.url %></td>
+    <td><%=h question.min_title %></td>
+    <td><%=h question.max_title %></td>
+    <td><%=h question.sort_id %></td>
+    <td><%=h question.is_display %></td>
+    <td><%= link_to 'Show', question %></td>
+    <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    <td><%= link_to 'Destroy', question, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New question', new_question_path %>

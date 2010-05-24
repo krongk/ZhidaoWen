@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  from: 1
+  category: 1
+  url: MyString
+  min_title: MyString
+  max_title: MyText
+  sort_id: 1
+  is_display: false
+
+two:
+  from: 1
+  category: 1
+  url: MyString
+  min_title: MyString
+  max_title: MyText
+  sort_id: 1
+  is_display: false
