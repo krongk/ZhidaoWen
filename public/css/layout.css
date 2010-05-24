@@ -24,6 +24,6 @@
 
 @import url(screen/basemod_2col_right_13.css);
 @import url(screen/content.css);
-
+@import url(screen/jQueryForm.css);
 /* import print layout | Druck-Layout einbinden */
 @import url(../yaml/print/print_003_draft.css);

@@ -1,0 +1,8 @@
+<%#
+# the users index
+%>
+<% if @user %>
+ <%= @user.login   %>
+<% else %>
+<p class="note">没有该用户,请检查!</p>
+<% end  %>

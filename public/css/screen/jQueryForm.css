@@ -1,0 +1,64 @@
+/**********************************
+
+Name: cmxform Styles
+
+***********************************/
+form.cmxform {
+	width: 370px;
+	font-size: 1.0em;
+	color: #333;
+}
+
+form.cmxform legend {
+	padding-left: 0;
+}
+
+form.cmxform legend, form.cmxform label {
+	color: #333;
+}
+
+form.cmxform fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+	background: url(../images/cmxform-fieldset.gif) left bottom repeat-x;
+	background-color: #F8FDEF;
+}
+
+form.cmxform fieldset fieldset {
+	background: none;
+}
+
+form.cmxform fieldset p, form.cmxform fieldset fieldset {
+	padding: 5px 10px 7px;
+	background: url(../images/cmxform-divider.gif) left bottom repeat-x;
+}
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic
+}
+
+div.error { display: none; }
+
+input.checkbox { border: none }
+
+form.cmxform  label {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+form.cmxform input {
+	height: 25px;
+}
+form.cmxform input.button{
+	background-color: #FC6;
+	height: 35px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	letter-spacing: 0.4em;
+}
+input.error { border: 1px dotted red; }
+form.cmxform .gray * { color: gray; }
