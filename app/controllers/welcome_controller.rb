@@ -14,6 +14,10 @@ class WelcomeController < ApplicationController
       @arr =load_from("http://wenwen.soso.com/z/c1191182336.htm","ul.question_list1","http://wenwen.soso.com",nil)
     elsif from=="4" #load from sogou
       @arr =load_from("http://women.wenda.sogou.com/cate/13.html","table.alist","","gbk")
+    elsif from=="5" #load from iask.sina.com.cn
+      @arr =load_from("http://iask.sina.com.cn/c/6.html","div#questionlist","http://iask.sina.com.cn","gbk")
+    elsif from=="6" #load from yahoo
+      @arr =load_from("http://ks.cn.yahoo.com/dir/ask.html","div.mqlist div.bd","http://ks.cn.yahoo.com",nil)
     else
      # render :text=>from
     end
@@ -34,7 +38,6 @@ class WelcomeController < ApplicationController
     if encoding
       arr=Iconv.iconv("utf-8//IGNORE", encoding, arr.to_s)
     end
-
     arr
   end
 end

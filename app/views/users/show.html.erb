@@ -2,7 +2,16 @@
 # the users index
 %>
 <% if @user %>
- <%= @user.login   %>
+<h1>亲爱的<%= @user.login   %>，欢迎你注册成为“知道问”的会员，</h1>
+<h2 style="color:green;">网站正在<span style="color:red;">夜以继日</span>的开发阶段，</h2>
+<h1>
+知道问是首例“微博+问答”模式的网络互动平台。
+</h1>
+<h3 style="color:blue;">我们将集成各项<span style="color: #ffcc00;">实时信息</span>，
+以及<span style="color: #ffcc00;">你关注的</span>，发生在<span style="color: #ffcc00;">你身边的</span>信息，
+为你提供更好的服务！</h3>
+<h1><span style="color: red;"><b>让互联网成为更敏捷的交流工具！</b></span>
+</h1>
 <% else %>
 <p class="note">没有该用户,请检查!</p>
 <% end  %>

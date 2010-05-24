@@ -222,5 +222,38 @@
   }
   */
   .ico_reward{display:none;}
+
+  /*sina iask start*/
+.bb1e{border-bottom:1px solid #eee;}
+.bb1de{border-bottom:1px dashed #eee;}
+.o,a.o{color:#f90; text-decoration:none;},a.ou{color:#f90; text-decoration:underline;}
+.lh15{line-height:150%;}
+.lh20{line-height:200%;}
+.lh21{line-height:21px;}
+.lh23{line-height:23px;}
+.lh25{line-height:25px;}
+.ar{font-family:Arial;}
+.b{font-weight:bold;}
+.cp{cursor:pointer;}
+.fl{float:left;}
+.fr{float:right;}
+.cb{clear:both;}
+.cr{clear:right;}
+.f10{font-size:10px;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.w1{width:100px;}
+.w2{width:460px;}
+.w50{width:50px;}
+.w60{width:60px;}
+.w70{width:70px;}
+.w80{width:80px;}
+.w110{width:110px;}
+.w150{width:150px;}
+.w220{width:220px;}
+.w300{width:300px;}
+.w350{width:350px;}
+ /*sina iask end */
 }
 
