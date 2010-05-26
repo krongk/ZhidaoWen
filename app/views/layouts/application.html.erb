@@ -8,11 +8,11 @@
     <!--[if lte IE 7]>
     <link href="/css/patches/patch_2col_right_13.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <%# javascript_include_tag 'jquery','jquery.validate','jquery.metadata','application' %>
-    <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag 'jquery','jquery.validate','jquery.metadata','application' %>
+    <%# javascript_include_tag :defaults %>
     <%= stylesheet_link_tag 'scaffold' %>
     <% if params[:from]=='1' %><%=stylesheet_link_tag "baidu"%><% end %>
-<% if params[:from]=='3' %><%=stylesheet_link_tag "soso"%><% end %>
+    <% if params[:from]=='3' %><%=stylesheet_link_tag "soso"%><% end %>
   </head>
   <body>
     <!-- skip link navigation -->
