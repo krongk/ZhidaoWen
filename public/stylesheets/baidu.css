@@ -1,0 +1,81 @@
+#baidu{width:100%;}
+#baidu .answer_content {
+	padding: 4px;
+	background-color: #ffe;
+	width:98%;
+}
+#baidu  #question_title {
+	font-size: 16px;
+	font-weight: bold;
+}
+#baidu #question_content {
+	padding-left: 20px;
+	padding-top: 6px;
+}
+#baidu #question_sup {
+	padding-left: 20px;
+	padding-bottom: 6px;
+}
+
+
+#baidu #best_answer_content {
+	background-color: #FFFFD0;
+	padding-top: 25px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+	padding-left: 6px;
+	background-image: url(../images/best-answer.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+#baidu #best_answer_comment {
+	background-color: #FC6;
+	font-weight: bold;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+#baidu .f14{font-size:14px;line-height:22px;}
+#baidu .f14B{font-size:14px;line-height:22px;font-weight:bold;}
+#baidu .wr{table-layout:fixed;word-wrap:break-word;}
+#baidu .wr td{padding-top:5px;}
+#baidu .red{color:#F30;}
+#baidu .gray{color:#666;}
+#baidu .pl10{padding-left:10px;}
+#baidu .share-icon strong{margin-left:-50px;}
+#baidu .share-icon{padding-left:60px;}
+#baidu .ico-share-itieba{background:url("http://img.baidu.com/img/baike/bgs4.gif") no-repeat scroll 2px -60px transparent;padding:1px 9px;zoom:1;}
+#baidu span.i{font-size:14px;font-family:'ËÎÌו';color:#000;margin:0;font-weight:bold;}
+.answer1,.answer2,.answer3{background:url(http://img.baidu.com/img/iknow/answer.gif) no-repeat;width:100px;height:25px;overflow:hidden;}.answer1{background-position:0 0;}.answer2{background-position:0 -25px;}.answer3{background-position:0 -50px;}
+.hide{display:none;}
+
+.bai{width:100%;position:relative;zoom:1;}.p90{width:90%;}
+.t3{padding-left:10px;height:24px;line-height:24px;border-width:1px 1px 0 1px;border-style:solid;font-size:14px;font-weight:bold;}
+.t3_favor{height:24px;line-height:24px;border-width:1px 1px 0 1px;border-style:solid;font-size:14px;font-weight:bold;}.t1{padding-left:10px;height:24px;line-height:24px;font-size:14px;font-weight:bold;}.b3{padding:5px 5px 5px 8px;border-width:0 1px 1px;border-style:solid;}
+.bgg{background-color:#DDF1D8;}.bgb{background-color:#DEEEF4;}.bgy{background-color:#FBF5C6;}.bgr{background-color:#FFE8E6;}.bcg{border-color:#58CB64;}.bcy{border-color:#F4BF20;}.bcb{border-color:#64B7D7;}.bcr{border-color:#FE7878;}.b4y{padding:5px 5px 5px 8px;border:1px solid #F4BF20;}
+.b4g{padding:5px 10px 8px 10px;border:1px solid #58CB64;}
+.f14{font-size:14px;line-height:22px;}
+.f14B{font-size:14px;line-height:22px;font-weight:bold;}
+.tdx{width:33%;height:22px;font-size:14px;line-height:22px;}.B{font-weight:bold;}
+.mb12{margin-bottom:12px;}.mb10{margin-bottom:10px;}.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}.grn,a.grn:link,a.grn:visited{color:#080;}
+.lbk,a.lbk:link,a.lbk:visited{color:#000;}
+.lgy,a.lgy:link,a.lgy:visited{color:#555;}
+.org,a.org:link,a.org:visited{color:#f60;}
+.org{color:#008000;font-weight:bold;}
+a.lmore_relaques:link,a.lmore_relaques:visited{font-weight:bold;font-size:14px;}
+a.lklbe:link,a.lklbe:visited{text-decoration:underline;color:#77c;}
+.per80{line-height:80%;}.wr{table-layout:fixed;word-wrap:break-word;}
+.wr td{padding-top:5px;}.gray{color:#666;}.red{color:#F30;}
+
+.p2{padding:2px;}.p4{padding:4px;}.p3{padding:3px;}.bl td.nl{border:0;}.f12{font-size:12px;}
+.bn100{padding-top:2px;height:25px;width:100px;}
+.subt{margin-bottom:5px;padding-right:10px;height:24px;line-height:24px;text-align:right;}
+.f{line-height:120%;font-size:100%;width:32em;padding-left:15px;word-break:break-all;word-wrap:break-word;}
+
+.bnsrh{height:24px;line-height:20px;}.mr20{margin-right:20px;}
+.note{background:url(http://img.baidu.com/img/iknow/popo.gif) no-repeat left;margin:12px 0;padding-left:20px;font-weight:bold;}
+.answer1,.answer2,.answer3{background:url(http://img.baidu.com/img/iknow/answer.gif) no-repeat;width:100px;height:25px;overflow:hidden;}.answer1{background-position:0 0;}.answer2{background-position:0 -25px;}.answer3{background-position:0 -50px;}#Lg{border-top:1px dashed #bbb;}

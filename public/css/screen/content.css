@@ -222,11 +222,15 @@
   }
   */
   .ico_reward{display:none;}
-
+  .yellowa{
+	color:#F90;
+	font-weight: bold;
+}
   /*sina iask start*/
 .bb1e{border-bottom:1px solid #eee;}
 .bb1de{border-bottom:1px dashed #eee;}
-.o,a.o{color:#f90; text-decoration:none;},a.ou{color:#f90; text-decoration:underline;}
+.o, a.o{color:#f90; text-decoration:none;}
+a.ou{color:#f90; text-decoration:underline;}
 .lh15{line-height:150%;}
 .lh20{line-height:200%;}
 .lh21{line-height:21px;}
@@ -256,4 +260,3 @@
 .w350{width:350px;}
  /*sina iask end */
 }
-

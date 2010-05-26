@@ -1,0 +1,49 @@
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#baidu .p90{width:90%;}
+#baidu .f14{font-size:14px;line-height:22px;}
+#baidu .f14B{font-size:14px;line-height:22px;font-weight:bold;}
+#baidu .wr{table-layout:fixed;word-wrap:break-word;}
+#baidu .wr td{padding-top:5px;}
+#baidu .red{color:#F30;}
+#baidu .gray{color:#666;}
+#baidu .pl10{padding-left:10px;}
+#baidu .share-icon strong{margin-left:-50px;}
+#baidu .share-icon{padding-left:60px;}
+#baidu .ico-share-itieba{background:url("http://img.baidu.com/img/baike/bgs4.gif") no-repeat scroll 2px -60px transparent;padding:1px 9px;zoom:1;}
+#baidu span.i{font-size:14px;font-family:'宋体';color:#000;margin:0;font-weight:bold;}
+.answer1,.answer2,.answer3{background:url(http://img.baidu.com/img/iknow/answer.gif) no-repeat;width:100px;height:25px;overflow:hidden;}.answer1{background-position:0 0;}.answer2{background-position:0 -25px;}.answer3{background-position:0 -50px;}

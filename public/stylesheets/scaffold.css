@@ -1,21 +1,3 @@
-body { background-color: #fff; color: #333; }
-
-body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
-  line-height: 18px;
-}
-
-pre {
-  background-color: #eee;
-  padding: 10px;
-  font-size: 11px;
-}
-
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
-
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
@@ -51,4 +33,60 @@ a:hover { color: #fff; background-color:#000; }
   font-size: 12px;
   list-style: square;
 }
+#soso .question_list1 {
+	list-style-type: none;
+}
+#soso .list_column1 {
+	width: 500px;
+	float: left;
+}
+#soso .list_column2 span {
+	float: left;
+	width: 80px;
+}
+#soso .question_list1 li {
+	line-height: 24px;
+}
+#sina .img1 {
+	height: 1px;
+	width: 1px;
+}
+#sina  .usr_info {
+	float: left;
+	width: 100px;
+	background-color: #ffc;
+}
+#sina  .usr_qus strong {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;
+}
+#sina  .usr_qus {
+	padding: 12px;
+}
 
+#sina .qus_c {
+	padding: 12px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+#sina .qus_c2 {
+	background-color: FFFFD0;
+}
+#yahoo .entrydetail {
+	padding: 10px;
+}
+#yahoo  .original {
+	background-color: #FF9;
+}
+#yahoo .entrydetail h3 {
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #C0C0C0;
+}
+#yahoo .entrydetail .supplement {
+	color: #03C;
+}
