@@ -1,7 +1,5 @@
 # This controller handles the login/logout function of the site.  
 class SessionsController < ApplicationController
-  # Be sure to include AuthenticationSystem in Application Controller instead
-  include AuthenticatedSystem
 
   # render new.rhtml
   def new
@@ -28,4 +26,5 @@ class SessionsController < ApplicationController
     flash[:notice] = "你已经退出了."
     redirect_back_or_default('/')
   end
+
 end

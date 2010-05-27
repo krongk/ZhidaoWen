@@ -1,0 +1,14 @@
+<%#
+# ajax login and signup
+%>
+<% if (controller.action_name =="new" and controller.controller_name=="users") or (controller.action_name =="new" and controller.controller_name=="sessions") %>
+<%# 避免验证冲突,所以在打开登录/注册页面的时候,关闭ajax渲染%>
+<% else %>
+<div id="cover" style="display: none" ><!--遮罩层--></div>
+<div id="login" style="display: none">
+	<div style="background-color:#FFCC99; padding:6px;">用户登录/注册对话框<span style="float:right">
+            <a class=closeme href="javascript:hide();" id="dlg_close">+关闭当前窗体</a></span></div>
+	<div id="login_form" style="display: none"><%=render :file=>"sessions/new" %></div>
+        <div id="signup_form" style="display: none"><%=render :file=>"users/new"%></div>
+</div>
+<% end %>

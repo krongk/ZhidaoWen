@@ -20,7 +20,7 @@ class WelcomeController < ApplicationController
     elsif from=="6" #load from yahoo
       @arr =load_from("http://ks.cn.yahoo.com/dir/over.html","div.mqlist div.bd","http://ks.cn.yahoo.com",nil)
     else
-      # render :text=>from
+       render :file=>"tips/a",:layout=>'application'
     end
   end
 

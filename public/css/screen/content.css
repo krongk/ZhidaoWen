@@ -202,7 +202,21 @@
   *
   * @section content-misc
   */
-
+.tips {
+	width: 98%;
+	margin: 2px auto;
+	background-color: #FFC;
+}
+.tips h1 {
+	color: #FE7C02;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.tip_content {
+	text-align: center;
+	padding: 20px;
+	background-color: #FF9;
+}
  /**
   * (en) Emphasizing external Hyperlinks via CSS
   * (de) Hervorhebung externer Hyperlinks mit CSS
@@ -259,4 +273,18 @@ a.ou{color:#f90; text-decoration:underline;}
 .w300{width:300px;}
 .w350{width:350px;}
  /*sina iask end */
+ A#select_item {
+}
+/*ajax弹出登录窗口开始*/
+DIV#cover {
+	Z-INDEX: 50; FILTER: alpha(opacity=60); LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 0px; HEIGHT: 1000px; BACKGROUND-COLOR: #000; opacity: .6
+}
+div#login {
+	Z-INDEX: 1000; LEFT: 50%; MaRGIN-LEFT: -205px; WIDTH: 415px; POSITION: absolute; TOP: 150px; BaCKGROUND-COLOR: white; TEXT-aLIGN: left
+}
+div#login h2{padding:10px 0 0 20px;}
+div#login form{padding:10px 0 30px 30px;}
+#loginform label{width:60px;}
+#yform label{width:80px;float:left;}
+/*ajax弹出登录窗口结束*/
 }
