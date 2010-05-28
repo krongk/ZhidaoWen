@@ -38268,3 +38268,43 @@ Rendering welcome/index
 Rendered layouts/_footer (4.0ms)
 Rendered layouts/_ajax_login (9.0ms)
 Completed in 393ms (View: 34, DB: 1) | 200 OK [http://127.0.0.1/?from=3&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 09:05:52) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (90.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 118ms (View: 115, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 09:06:45) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (7.0ms)
+Rendered layouts/_ajax_login (8.0ms)
+Completed in 34ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 09:10:10) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (7.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 09:10:45) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (8.0ms)
+Completed in 21ms (View: 19, DB: 1) | 200 OK [http://127.0.0.1/]

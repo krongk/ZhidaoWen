@@ -100,7 +100,7 @@
   #footer a:active {color: #4D87C7; background-color: transparent; text-decoration:underline; }
   #footer .friend_link{}
   #footer .friend_link a{margin:4px;padding: 2px;}
-  #footer .copy_right{margin: 10px auto;}
+  #footer .copy_right{text-align: center;margin: 10px auto;}
  /**
   * ------------------------------------------------------------------------------------------------- #
   *
