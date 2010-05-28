@@ -38166,3 +38166,105 @@ Rendering template within layouts/application
 Rendering tips/a
 Rendered layouts/_ajax_login (8.0ms)
 Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:42:55) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (4.0ms)
+Rendered layouts/_ajax_login (53.0ms)
+Completed in 6272ms (View: 6269, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:43:42) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:45:07) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (4.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 30ms (View: 27, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:46:00) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (4.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 29ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:46:30) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (4.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 34ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:49:02) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (4.0ms)
+Rendered layouts/_ajax_login (8.0ms)
+Completed in 30ms (View: 28, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:49:19) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (15.0ms)
+Completed in 35ms (View: 30, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:50:18) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (6.0ms)
+Rendered layouts/_ajax_login (8.0ms)
+Completed in 51ms (View: 48, DB: 0) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:50:30) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (87.0ms)
+Completed in 556ms (View: 132, DB: 1) | 200 OK [http://127.0.0.1/?from=3&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 08:51:15) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (4.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 393ms (View: 34, DB: 1) | 200 OK [http://127.0.0.1/?from=3&category=1]

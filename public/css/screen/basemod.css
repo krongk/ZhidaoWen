@@ -94,12 +94,13 @@
   #topnav a:hover,
   #topnav a:active { text-decoration:underline; background-color: transparent; }
 
-  #footer a { color: #999; background:transparent; font-weight: bold; }
+  #footer a { color: #999; background:transparent;font-weight: bold;}
   #footer a:focus,
   #footer a:hover,
   #footer a:active {color: #4D87C7; background-color: transparent; text-decoration:underline; }
-  #footer ul{}
-  #footer li{margin:6px;}
+  #footer .friend_link{}
+  #footer .friend_link a{margin:4px;padding: 2px;}
+  #footer .copy_right{margin: 10px auto;}
  /**
   * ------------------------------------------------------------------------------------------------- #
   *

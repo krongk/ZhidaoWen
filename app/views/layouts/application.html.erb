@@ -85,11 +85,7 @@
         <!-- end: #main -->
         <!-- begin: #footer -->
     <div id="footer" role="contentinfo">
-    <div id="left">&copy;2010-2015 &nbsp;inruby.com 版权所有<br />
-    <a href="http://www.inruby.com/">红宝石网络</a></div>
-    <div id="right">
-      
-    </div>
+     <%=render :partial=>'layouts/footer'%>
     </div>
     <!-- end: #footer -->
       </div>
@@ -98,8 +94,6 @@
     <script src="/yaml/core/js/yaml-focusfix.js" type="text/javascript"></script>
     <!--ajax login-->
     <%=render :partial=>'layouts/ajax_login' %>
-    <!--51.la-->
-    <script language="javascript" type="text/javascript" src="http://js.users.51.la/3829888.js"></script>
-    <noscript><a href="http://www.51.la/?3829888" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/3829888.asp" style="border:none" /></a></noscript>
+ 
   </body>
 </html>
