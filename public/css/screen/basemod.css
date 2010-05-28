@@ -38,7 +38,12 @@
 
   /* (en) Marginal areas & page background */
   /* (de) Randbereiche & Seitenhintergrund */
-  body { background: #4d87c7 url("../../images/bg_blue.png") repeat-x top left fixed; padding:0; }
+  body {
+	padding:0;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-position: left top;
+}
 
   /* (en) Centering layout in old IE-versions */
   /* (de) Zentrierung des Layouts in alten IE-versionen */
@@ -82,7 +87,7 @@
 	font-weight:bold;
 	font-size:4em;
 	line-height:65%;
-	color:#03C;
+	color:#F60;
 	font-family: "微软雅黑";
 	letter-spacing: 0.3em;
   }

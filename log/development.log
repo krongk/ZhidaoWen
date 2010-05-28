@@ -38308,3 +38308,150 @@ Rendering tips/a
 Rendered layouts/_footer (1.0ms)
 Rendered layouts/_ajax_login (8.0ms)
 Completed in 21ms (View: 19, DB: 1) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (154.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:29:51) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (9.0ms)
+Rendered layouts/_ajax_login (82.0ms)
+Completed in 8988ms (View: 8985, DB: 155) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:32:22) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 23ms (View: 19, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-28 12:32:41) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-28 12:32:44) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-28 12:32:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:32:51) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (10.0ms)
+Completed in 425ms (View: 59, DB: 0) | 200 OK [http://localhost/?from=5&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:35:24) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 368ms (View: 25, DB: 0) | 200 OK [http://localhost/?from=5&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:38:49) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (10.0ms)
+Completed in 355ms (View: 25, DB: 1) | 200 OK [http://localhost/?from=5&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:39:07) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (10.0ms)
+Completed in 402ms (View: 25, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:39:12) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (11.0ms)
+Completed in 424ms (View: 31, DB: 1) | 200 OK [http://localhost/?from=3&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-28 12:39:14) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 19ms (View: 16, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:39:15) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (10.0ms)
+Completed in 2809ms (View: 30, DB: 0) | 200 OK [http://localhost/?from=6&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:39:24) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (10.0ms)
+Completed in 394ms (View: 27, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-28 12:39:41) [GET]
+Rendering template within layouts/application
+Rendering tips/a
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (13.0ms)
+Completed in 27ms (View: 24, DB: 2) | 200 OK [http://localhost/]
