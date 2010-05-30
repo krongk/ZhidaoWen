@@ -38,27 +38,13 @@
         <div id="nav" role="navigation">
           <div class="hlist">
             <ul>
-              <% if params[:from]=="1" %><li class="active"><strong>百度知道</strong></li>
-              <% else %><li><a href="/?from=1&category=1">百度知道</a></li><% end %>
-
-              <% if params[:from]=="3" %><li class="active"><strong>SOSO问问</strong></li>
-              <% else %><li><a href="/?from=3&category=1">SOSO问问</a></li><% end %>
-
-              <% if params[:from]=="5" %><li class="active"><strong>新浪爱问</strong></li>
-              <% else %><li><a href="/?from=5&category=1">新浪爱问</a></li><% end %>
-
-              <% if params[:from]=="2" %><li class="active"><strong>天涯问答</strong></li>
-              <% else %><li><a href="/?from=2&category=1">天涯问答</a></li><% end %>
-
-              <% if params[:from]=="4" %><li class="active"><strong>搜狗问答</strong></li>
-              <% else %><li><a href="/?from=4&category=1">搜狗问答</a></li><% end %>
-
-              <% if params[:from]=="6" %><li class="active"><strong>雅虎知识堂</strong></li>
-              <% else %><li><a href="/?from=6&category=1">雅虎知识堂</a></li><% end %>
-
-              <% if controller.controller_name=="users" %><li class="active"><strong>我的关注</strong></li>
-              <% elsif current_user %><li><%=link_to "我的关注",current_user%></li><% else%> <li><a href="/login">我的关注</a></li><% end %>
-
+              <li class="<%=active(1)%>"><a href="/?from=1&category=1" >百度知道</a></li>
+              <li class="<%=active(3)%>"><a href="/?from=3&category=1" >SOSO问问</a></li>
+              <li class="<%=active(5)%>"><a href="/?from=5&category=1">新浪爱问</a></li>
+              <li class="<%=active(2)%>"><a href="/?from=2&category=1" >天涯问答</a></li>
+              <li class="<%=active(4)%>"><a href="/?from=4&category=1" >搜狗问答</a></li>
+              <li class="<%=active(6)%>"><a href="/?from=6&category=1" >雅虎知识堂</a></li>
+              <% if current_user %><li><%=link_to "我的关注",current_user %></li><% else%> <li><a href="/login">我的关注</a></li><% end %>
             </ul>
           </div>
         </div>

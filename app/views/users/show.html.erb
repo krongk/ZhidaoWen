@@ -15,3 +15,7 @@
 <% else %>
 <p class="note">没有该用户,请检查!</p>
 <% end  %>
+<hr/>你关注了以下问答:
+<% @follows.each do |follow| %>
+ <%=  follow.question_id %><br/>
+<% end %>

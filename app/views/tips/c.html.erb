@@ -1,2 +1,28 @@
-<h1>Tips#c</h1>
-<p>Find me in app/views/tips/c.html.erb</p>
+<% if @question %>
+<% if current_user %>
+<% follow = Follow.find(:first,:conditions=>["follows.user_id=? and follows.question_id =?",current_user.id,@question.id]) %>
+  <% if follow %>
+<p class="add_follow_form">
+        <input type="image" src="/images/btn1.gif"  />
+</p>
+ <% else %>
+    <% form_for(@question,:html=>{:class=>'add_follow_form'}) do |f| %>
+      <% session[:return_to] = request.request_uri%>
+      <% if current_user %>
+        <%=hidden_field_tag "question_user_id", current_user.id  %>
+      <% else %>
+        <%=hidden_field_tag "question_user_id", "0" %>
+      <% end %>
+      <%=f.hidden_field :from, :value=> @question.from%>
+      <%=f.hidden_field :category, :value=> @question.category%>
+      <%=f.hidden_field :url, :value=> @question.url%>
+      <%=f.hidden_field :min_title, :value=> @question.min_title%>
+      <%=f.hidden_field :sort_id, :value=> @question.sort_id%>
+      <%=f.hidden_field :is_display, :value=> @question.is_display%>
+      <p>
+        <input type="image" src="/images/btn.gif" onmousemove="this.src='/images/btn.gif'" onmouseout="this.src='/images/btn.gif'" />
+      </p>
+    <% end %>
+  <% end %>
+ <% end %>
+<% end %>

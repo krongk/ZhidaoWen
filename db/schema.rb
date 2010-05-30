@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100526015906) do
+ActiveRecord::Schema.define(:version => 20100530051053) do
 
   create_table "follows", :force => true do |t|
     t.integer  "user_id"
@@ -18,14 +18,21 @@ ActiveRecord::Schema.define(:version => 20100526015906) do
     t.datetime "updated_at"
   end
 
+  create_table "logs", :force => true do |t|
+    t.string   "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "questions", :force => true do |t|
     t.integer  "from"
     t.integer  "category"
     t.string   "url"
+    t.string   "original_url"
     t.string   "min_title"
     t.text     "max_title"
-    t.integer  "sort_id"
-    t.boolean  "is_display"
+    t.integer  "sort_id",      :default => 1
+    t.boolean  "is_display",   :default => true
     t.datetime "created_at"
     t.datetime "updated_at"
   end

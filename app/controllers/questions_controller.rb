@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+  before_filter :login_required, :except=>[:index,:show]
   # GET /questions
   # GET /questions.xml
   def index
@@ -40,18 +41,24 @@ class QuestionsController < ApplicationController
   # POST /questions
   # POST /questions.xml
   def create
+    #1.save the question
     @question = Question.new(params[:question])
-
-    respond_to do |format|
-      if @question.save
-        flash[:notice] = 'Question was successfully created.'
-        format.html { redirect_to(@question) }
-        format.xml  { render :xml => @question, :status => :created, :location => @question }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @question.errors, :status => :unprocessable_entity }
+     respond_to do |format|
+    if @question.save
+      #2.create a follow
+      follow = Follow.new
+      follow.question_id = @question.id
+      follow.user_id = current_user.id
+      follow.save
+      flash[:notice] = '问题已添加关注.'
+       Log.add("<a target='_blank' href='users/#{current_user.id}'>#{current_user.login}</a>在#{Time.now}"+
+           "关注了问答:<a target='_blank' href='/show/?from=#{@question.from}&id=#{@question.url}'>#{@question.min_title}</a>")
+      format.html { redirect_back_or_default(current_user) }
+      #3.create a log
+    else
+       format.html { render :action => "new" }
       end
-    end
+     end
   end
 
   # PUT /questions/1

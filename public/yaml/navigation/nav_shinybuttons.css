@@ -86,13 +86,13 @@
     border-left:1px #444 solid;
     border-right:1px #888 solid;
   }
-
+  .hlist ul li.active a{color:#333;}
   .hlist ul li.active strong,
   .hlist ul li.active a:focus,
   .hlist ul li.active a:hover,
   .hlist ul li.active a:active {
 	background:transparent;
-	color:#333;
+	color:#ddd;
 	text-decoration:none;
 }
 }

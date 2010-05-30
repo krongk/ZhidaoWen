@@ -30,6 +30,7 @@ class WelcomeController < ApplicationController
     if from =='1'  # from zhidao.baidu.com
       #@arr= show_zhidao(id,"gb2312")
       @arr = load_show(:url=>"http://zhidao.baidu.com/question/#{id}",:parse_css=>["div.p90","div.wr"],:encoding=>'gb2312')
+      @question = build_obj(:from=>params[:from],:category=>'1',:url=>id,:original_url=>"http://zhidao.baidu.com/question/#{id}",:title_css=>"div#question_title")
     elsif from =='3'  # from soso
       #@arr= show_soso(id,nil)
       @arr = load_show(:url=>"http://wenwen.soso.com/z/#{id}",:parse_css=>["div.question_wrap","div.sloved_answer_main","div.answer_main"],:encoding=>nil)
@@ -76,13 +77,27 @@ class WelcomeController < ApplicationController
         doc.css(css).each do |line|
           arr << line
         end
-      end   
+      end
       if arg[:encoding]
         arr=Iconv.iconv("utf-8//IGNORE", arg[:encoding], arr.to_s)
       end
     end # args block end
     arr
   end
-  #test
+  #build question object
+  def build_obj(*args)
+   question = Question.find(:first,:conditions=>["questions.from = ? and questions.url = ?",args[0][:from],args[0][:url]]) || Question.new
+    args.each do |arg|   
+      question.from = arg[:from]
+      question.category = arg[:category]
+      question.sort_id = 1
+      question.is_display = true
+      question.url = arg[:url]
+      question.original_url = arg[:original_url]
+        doc = Nokogiri::HTML(open(arg[:original_url]))
+      question.min_title = doc.at_css(arg[:title_css]).content
+    end #args block end
+     question
+  end
 
 end

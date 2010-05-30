@@ -1,8 +1,9 @@
 <div id="<%=site(params[:from])%>">
-<% if @arr %>
-  <% @arr = @arr.to_s.gsub(/<pre>/,"").gsub(/<\/pre>/,"") %>
-  <% @arr.each do |line| %>
-    <%=line%>
+  <%=render :file=>'tips/c',:question=>@question%>
+  <% if @arr %>
+    <% @arr = @arr.to_s.gsub(/<pre>/,"").gsub(/<\/pre>/,"") %>
+    <% @arr.each do |line| %>
+      <%=line%>
+    <% end %>
   <% end %>
-<% end %>
 </div>
