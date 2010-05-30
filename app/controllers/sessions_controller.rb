@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       end
       redirect_back_or_default(user_path(current_user))
       flash[:notice] = "登录成功"
-      Log.add("<a target='_blank' href='users/#{@user.id}'>#{@user.login}</a>在#{Time.now}到访过知道问!")
+      Log.add("<a target='_blank' href='users/#{current_user.id}'>#{current_user.login}</a>在#{Time.now}到访过知道问!")
     else
       render :action => 'new'
     end

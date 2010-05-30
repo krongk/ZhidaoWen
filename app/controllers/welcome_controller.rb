@@ -8,7 +8,6 @@ class WelcomeController < ApplicationController
     @arr = []
     if from=="1"  #load from zhidao.baidu.com
       @arr =load_from("http://zhidao.baidu.com/browse/?lm","table#tl","http://zhidao.baidu.com","gb2312")
-      #@obj =customize_zhidao
     elsif from=="2" #load from tianya.com
       @arr =load_from("http://wenda.tianya.cn/wenda/?tab=wtmtoc#wtmtc","div.wvtpCSS table.wpr2trCSS","http://wenda.tianya.cn",nil)
     elsif from=="3" #load from soso
@@ -20,6 +19,7 @@ class WelcomeController < ApplicationController
     elsif from=="6" #load from yahoo
       @arr =load_from("http://ks.cn.yahoo.com/dir/over.html","div.mqlist div.bd","http://ks.cn.yahoo.com",nil)
     else
+       @logs = Log.all(:order=>"created_at desc",:limit=>30)
        render :file=>"tips/a",:layout=>'application'
     end
   end
@@ -30,19 +30,22 @@ class WelcomeController < ApplicationController
     if from =='1'  # from zhidao.baidu.com
       #@arr= show_zhidao(id,"gb2312")
       @arr = load_show(:url=>"http://zhidao.baidu.com/question/#{id}",:parse_css=>["div.p90","div.wr"],:encoding=>'gb2312')
-      @question = build_obj(:from=>params[:from],:category=>'1',:url=>id,:original_url=>"http://zhidao.baidu.com/question/#{id}",:title_css=>"div#question_title")
+      @question = build_obj(:from=>from,:category=>'1',:url=>id,:original_url=>"http://zhidao.baidu.com/question/#{id}",:title_css=>"div#question_title")
     elsif from =='3'  # from soso
-      #@arr= show_soso(id,nil)
       @arr = load_show(:url=>"http://wenwen.soso.com/z/#{id}",:parse_css=>["div.question_wrap","div.sloved_answer_main","div.answer_main"],:encoding=>nil)
+      @question = build_obj(:from=>from,:category=>'1',:url=>id,:original_url=>"http://wenwen.soso.com/z/#{id}",:title_css=>"div.question_main h3")
     elsif from =='5'  # from sina
-      #@arr= show_sina(id,"gbk")
       @arr = load_show(:url=>"http://iask.sina.com.cn/b/#{id}",:parse_css=>["div.qus_c","div.qus_c2","div.ans_c"],:encoding=>'gbk')
+      @question = build_obj(:from=>from,:category=>'1',:url=>id,:original_url=>"http://iask.sina.com.cn/b/#{id}",:title_css=>"div.usr_qus strong")
     elsif from =='2'  # from tianya
       @arr = load_show(:url=>"http://wenda.tianya.cn/wenda/thread?tid=#{id}",:parse_css=>["div.wpcppmcCSS"],:encoding=>nil)
+      @question = build_obj(:from=>from,:category=>'1',:url=>id,:original_url=>"http://wenda.tianya.cn/wenda/thread?tid=#{id}",:title_css=>"div.wpcpsCSS")
     elsif from =='4'  # from sogou 
       @arr = load_show(:url=>"http://wenda.sogou.com/question/#{id}",:parse_css=>["div.content"],:encoding=>'gbk')
-     elsif from =='6'  # from sogou
+      @question = build_obj(:from=>from,:category=>'1',:url=>id,:original_url=>"http://wenda.sogou.com/question/#{id}",:title_css=>"div.boxl2 h3")
+     elsif from =='6'  # from yahoo
       @arr = load_show(:url=>"http://ks.cn.yahoo.com/question/#{id}",:parse_css=>["div.entrydetail"],:encoding=>nil)
+       @question = build_obj(:from=>from,:category=>'1',:url=>id,:original_url=>"http://ks.cn.yahoo.com/question/#{id}",:title_css=>"div.entrydetail h3")
     else
       render :text =>"nothing"
     end

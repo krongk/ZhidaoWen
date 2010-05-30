@@ -1,8 +1,9 @@
 class LogsController < ApplicationController
+  #before_filter :login_required, :only=>[:new,:create]
   # GET /logs
   # GET /logs.xml
   def index
-    @logs = Log.all
+    @logs = Log.all(:order=>"created_at desc",:limit=>30)
 
     respond_to do |format|
       format.html # index.html.erb
