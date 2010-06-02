@@ -44269,3 +44269,103 @@ Rendering users/show
 Rendered layouts/_footer (0.0ms)
 Rendered layouts/_ajax_login (17.0ms)
 Completed in 223ms (View: 47, DB: 85) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-31 18:13:35) [GET]
+  [4;36;1mLog Load (153.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (17.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (17.0ms)
+Rendered layouts/_ajax_login (152.0ms)
+Completed in 7067ms (View: 6881, DB: 171) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-31 18:15:36) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (12.0ms)
+Completed in 53ms (View: 31, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-31 18:16:56) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (11.0ms)
+Completed in 55ms (View: 31, DB: 9) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-31 18:17:17) [GET]
+  [4;36;1mLog Load (0.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (16.0ms)
+Completed in 71ms (View: 41, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-31 18:17:26) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (13.0ms)
+Completed in 62ms (View: 34, DB: 8) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-31 18:18:01) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+
+SocketError (getaddrinfo: no address associated with hostname.):
+  C:/Ruby18/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  C:/Ruby18/lib/ruby/1.8/net/http.rb:560:in `open'
+  C:/Ruby18/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby18/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  C:/Ruby18/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  C:/Ruby18/lib/ruby/1.8/net/http.rb:560:in `connect'
+  C:/Ruby18/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  C:/Ruby18/lib/ruby/1.8/net/http.rb:542:in `start'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:242:in `open_http'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:616:in `buffer_open'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:164:in `open_loop'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:162:in `catch'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:162:in `open_loop'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:132:in `open_uri'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:518:in `open'
+  C:/Ruby18/lib/ruby/1.8/open-uri.rb:30:in `open'
+  app/controllers/welcome_controller.rb:60:in `load_from'
+  app/controllers/welcome_controller.rb:10:in `index'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (105.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
