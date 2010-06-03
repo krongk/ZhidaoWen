@@ -1,4 +1,5 @@
 class FollowsController < ApplicationController
+  before_filter :login_required
   # GET /follows
   # GET /follows.xml
   def index

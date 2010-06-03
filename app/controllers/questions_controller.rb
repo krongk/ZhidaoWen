@@ -51,7 +51,7 @@ class QuestionsController < ApplicationController
       follow.user_id = current_user.id
       follow.save
       flash[:notice] = '问题已添加关注.'
-       Log.add("<a target='_blank' href='users/#{current_user.id}'>#{current_user.login}</a>在#{Time.now}"+
+       Log.add("<a target='_blank' href='users/#{current_user.id}'>#{current_user.login}</a>在#{Time.now.to_s(:db)}"+
            "关注了问答:<a target='_blank' href='/show/?from=#{@question.from}&id=#{@question.url}'>#{@question.min_title}</a>")
       format.html { redirect_back_or_default(current_user) }
       #3.create a log

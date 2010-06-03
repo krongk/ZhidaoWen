@@ -16,6 +16,10 @@
 <p class="note">没有该用户,请检查!</p>
 <% end  %>
 <hr/>你关注了以下问答:
+<table>
 <% @follows.each do |follow| %>
- <%=  follow.question_id %><br/>
+ <% question =  Question.find(follow.question_id) %>
+  <tr><td width="140px"><%=question.created_at.to_s(:db)%></td>
+    <td><%=link_to question.min_title,"/show/?from=#{question.from}&id=#{question.url}"%></td></tr>
 <% end %>
+</table>

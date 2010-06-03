@@ -15,4 +15,8 @@ module ApplicationHelper
       ""
     end
   end
+  #def the pretty title
+  def title(page_title)
+    content_for(:title){page_title}
+  end
 end

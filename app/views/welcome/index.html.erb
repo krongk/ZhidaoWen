@@ -1,3 +1,4 @@
+<% title "搜索主页" %>
 <% if @arr -%>
 <% @arr =@arr.to_s.gsub(/http:\/\/zhidao.baidu.com\/question\//,"\/show\/?from=1&id=") if params[:from]=='1'%>
 <% @arr =@arr.to_s.gsub(/http:\/\/wenwen.soso.com\/z\/q/,"\/show\/?from=3&id=q") if params[:from]=='3'%>

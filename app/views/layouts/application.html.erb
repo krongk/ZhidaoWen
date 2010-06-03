@@ -2,13 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>知道问</title>
+    <meta content="提供问答搜索比较，聚合问答类知识分享。" name="description"/>
+    <title>知道问-<%= yield(:title) || "zhidaowen.com" %></title>
     <link href="/css/layout.css" rel="stylesheet" type="text/css"/>
     <!--[if lte IE 7]>
     <link href="/css/patches/patch_2col_right_13.css" rel="stylesheet" type="text/css" />
     <![endif]-->
     <%= javascript_include_tag 'jquery','jquery.validate','jquery.metadata','application' %>
-   <%# javascript_include_tag :defaults %>
+    <%# javascript_include_tag :defaults %>
     <%= stylesheet_link_tag 'scaffold' %>
     <% if params[:from]=='1' %><%=stylesheet_link_tag "baidu"%><% end %>
     <% if params[:from]=='3' %><%=stylesheet_link_tag "soso"%><% end %>
@@ -29,7 +30,7 @@
                 <%=link_to "进入个人主页", user_path(current_user)%>
                 &nbsp;&nbsp;<a href="/logout">退出</a></span>
             <% else -%>
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="javascript:login(1);return false;" href="/login" >登录</a>&nbsp;&nbsp;<a href="/signup" onclick="javascript:login(0);return false;">注册</a></span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="javascript:show_dlg();login(1);return false;" href="/login" >登录</a>&nbsp;&nbsp;<a href="/signup" onclick="javascript:show_dlg();login(0);return false;">新用户注册</a></span>
             <% end -%>
           </div>
           <h1>知道问 <em>&laquo;zhidaowen.com&raquo;</em></h1>
@@ -78,8 +79,7 @@
     </div>
     <!-- full skiplink functionality in webkit browsers -->
     <script src="/yaml/core/js/yaml-focusfix.js" type="text/javascript"></script>
-    <!--ajax login-->
-    <%=render :partial=>'layouts/ajax_login' %>
- 
+    <!--ajax login start-->
+    <%= render :partial=>'layouts/ajax_login' %>
   </body>
 </html>

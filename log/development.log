@@ -44369,3 +44369,2869 @@ SocketError (getaddrinfo: no address associated with hostname.):
 Rendered rescues/_trace (105.0ms)
 Rendered rescues/_request_and_response (5.0ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:32:22) [GET]
+  [4;36;1mLog Load (30.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (35.0ms)
+Rendered layouts/_ajax_login (59.0ms)
+Completed in 7099ms (View: 7048, DB: 35) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:37:15) [GET]
+  [4;36;1mLog Load (0.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (16.0ms)
+Completed in 68ms (View: 44, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:37:24) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (11.0ms)
+Completed in 65ms (View: 38, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 07:37:26) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 191ms (View: 37, DB: 1) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:38:18) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+
+ActionView::TemplateError (Missing template session/new.erb in view path app/views) on line #10 of app/views/layouts/_ajax_login.erb:
+7: <div id="cover" style="display: none" ><!--遮罩层--></div>
+8: <div id="login" style="display: none">
+9: 	<div style="background-color:#FFCC99; padding:6px;">用户登录/注册对话框<span style="float:right">
+10:             <a class=closeme href="javascript:hide();" id="dlg_close">+关闭当前窗体</a></span></div>
+11: 	<div id="login_form" style="display: none">
+12:           <iframe src="<%=render :file=>"session/new" %>" ></iframe>
+13:         </div>
+
+    app/views/layouts/_ajax_login.erb:10
+    app/views/layouts/application.html.erb:82
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (325.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:38:37) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (17.0ms)
+Completed in 1399ms (View: 46, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:38:39) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (18.0ms)
+Completed in 66ms (View: 40, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 07:38:40) [GET]
+
+ActionController::RoutingError (No route matches "/%3Ch2%3E%E7%9F%A5%E9%81%93%E9%97%AE%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%3C/h2%3E%3Chr/%3E%3Cform%20action=" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:39:27) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (19.0ms)
+Completed in 967ms (View: 54, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:41:06) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered sessions/_new (8.0ms)
+Rendered layouts/_ajax_login (44.0ms)
+Completed in 4972ms (View: 79, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:42:01) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (2.0ms)
+Rendered layouts/_ajax_login (16.0ms)
+Completed in 3777ms (View: 56, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 07:42:07) [GET]
+
+ActionController::RoutingError (No route matches "/session/_new" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:42:24) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (14.0ms)
+Completed in 13854ms (View: 160, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#_new (for 127.0.0.1 at 2010-06-03 07:42:40) [GET]
+Rendering template within layouts/application
+Rendering sessions/_new
+Rendered sessions/_new (7.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (9.0ms)
+Completed in 39ms (View: 34, DB: 0) | 200 OK [http://localhost/sessions/_new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#_new (for 127.0.0.1 at 2010-06-03 07:42:41) [GET]
+Rendering template within layouts/application
+Rendering sessions/_new
+Rendered sessions/_new (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (12.0ms)
+Completed in 45ms (View: 38, DB: 1) | 200 OK [http://localhost/sessions/_new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:44:08) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+
+ActionView::TemplateError (Missing template sessions/_new.erb in view path app/views) on line #9 of app/views/layouts/_ajax_login.erb:
+6: <% else %>
+7: <div id="cover" style="display: none" ><!--遮罩层--></div>
+8: <div id="login" style="display: none">
+9: 	<div style="background-color:#FFCC99; padding:6px;">用户登录/注册对话框<span style="float:right">
+10:             <a class=closeme href="javascript:hide();" id="dlg_close">+关闭当前窗体</a></span></div>
+11: 	<div id="login_form" style="display: none"><%=render :partial=>"sessions/new" %></div>
+12:         <div id="signup_form" style="display: none"><%=render :file=>"users/new"%></div>
+
+    app/views/layouts/_ajax_login.erb:9
+    app/views/layouts/application.html.erb:82
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (314.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:44:25) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (17.0ms)
+Completed in 14625ms (View: 48, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 07:59:57) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Completed in 2103ms (View: 63, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:04:10) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Completed in 2117ms (View: 60, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:04:15) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Completed in 31ms (View: 25, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:04:20) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Completed in 3150ms (View: 28, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 08:04:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (1.0ms)
+Completed in 51ms (View: 44, DB: 2) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:04:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Completed in 40ms (View: 33, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:04:49) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Completed in 3908ms (View: 38, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:06:52) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Completed in 1150ms (View: 29, DB: 0) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-03 08:07:04) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "sex"=>"0", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"注 册", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo="}
+  [4;36;1mUser Columns (34.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: sex
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (20.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY '') LIMIT 1[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Completed in 223ms (View: 78, DB: 57) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:07:21) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Completed in 226ms (View: 29, DB: 6) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:08:27) [GET]
+  [4;35;1mLog Load (2.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (3.0ms)
+Completed in 95ms (View: 71, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:08:34) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 4307ms (View: 32, DB: 1) | 200 OK [http://localhost/?from=3&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:08:53) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 1931ms (View: 23, DB: 0) | 200 OK [http://localhost/?from=5&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:08:58) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 69ms (View: 22, DB: 6) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:10:21) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 74ms (View: 22, DB: 5) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#show (for 127.0.0.1 at 2010-06-03 08:10:24) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:10:42) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+  [4;35;1mUser Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 86ms (View: 26, DB: 12) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 08:10:44) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 35ms (View: 30, DB: 0) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:10:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:10:51) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 32ms (View: 26, DB: 1) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:10:53) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:10:54) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:10:55) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 39ms (View: 30, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:10:56) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 31ms (View: 25, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:10:59) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 3736ms (View: 29, DB: 1) | 200 OK [http://localhost/?from=5&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:11:10) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:11:15) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:11:15) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:11:17) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 25ms (View: 19, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 08:11:17) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 31ms (View: 26, DB: 2) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:11:21) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:11:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 31ms (View: 27, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 08:11:26) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 35ms (View: 29, DB: 0) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:11:47) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 6798ms (View: 50, DB: 1) | 200 OK [http://localhost/?from=6&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:12:14) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 23182ms (View: 25, DB: 0) | 200 OK [http://localhost/?from=6&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 08:12:42) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 50ms (View: 41, DB: 0) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:13:18) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 2679ms (View: 62, DB: 1) | 200 OK [http://localhost/?from=3&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-03 08:13:27) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "sex"=>"0", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"注 册", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo="}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: sex
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY '') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 156ms (View: 79, DB: 9) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-06-03 08:17:56) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, new, and show):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:18:04) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 4440ms (View: 22, DB: 2) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:18:55) [GET]
+  Parameters: {"from"=>"1", "id"=>"154153867.html"}
+  [4;36;1mQuestion Load (98.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '154153867.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 139288ms (View: 172, DB: 104) | 200 OK [http://localhost/show/?from=1&id=154153867.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:21:15) [GET]
+  Parameters: {"from"=>"1", "id"=>"154349452.html"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '154349452.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 3280ms (View: 26, DB: 10) | 200 OK [http://localhost/show/?from=1&id=154349452.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:28:15) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 1393ms (View: 94, DB: 0) | 200 OK [http://localhost/?from=3&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:28:22) [GET]
+  Parameters: {"from"=>"3", "id"=>"q196321318.htm"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '3' and questions.url = 'q196321318.htm') LIMIT 1[0m
+  [4;35;1mQuestion Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 2306ms (View: 40, DB: 10) | 200 OK [http://localhost/show/?from=3&id=q196321318.htm]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:29:57) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 3533ms (View: 39, DB: 0) | 200 OK [http://localhost/?from=3&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:30:10) [GET]
+  Parameters: {"from"=>"3", "id"=>"q196286980.htm"}
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '3' and questions.url = 'q196286980.htm') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 2749ms (View: 57, DB: 5) | 200 OK [http://localhost/show/?from=3&id=q196286980.htm]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:41:08) [GET]
+  Parameters: {"from"=>"3", "id"=>"q196286980.htm"}
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '3' and questions.url = 'q196286980.htm') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 982ms (View: 52, DB: 6) | 200 OK [http://localhost/show/?from=3&id=q196286980.htm]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:41:24) [GET]
+  [4;36;1mLog Load (2.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 58ms (View: 26, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:41:35) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 598ms (View: 44, DB: 1) | 200 OK [http://localhost/?from=3&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:41:46) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"lanlan", "password"=>"lanlan", "remember_me"=>"on"}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+  [4;36;1mLog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLog Create (63.0ms)[0m   [0;1mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 00:41:46', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 08:41:46到访过知道问!', '2010-06-03 00:41:46')[0m
+  [4;35;1mSQL (64.0ms)[0m   [0mCOMMIT[0m
+Completed in 228ms (DB: 139) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 08:41:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (71.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (user_id = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mFollow Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `follows`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 239ms (View: 58, DB: 84) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:41:56) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (5.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 117ms (View: 79, DB: 18) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 08:47:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (0.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mFollow Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `follows`[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 541ms (View: 462, DB: 21) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 08:47:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (0.0ms)[0m   [0mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mFollow Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 173ms (View: 84, DB: 23) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 08:48:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (0.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mFollow Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `follows`[0m
+  [4;36;1mQuestion Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 135ms (View: 62, DB: 17) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show to html (for 127.0.0.1 at 2010-06-03 08:48:18) [GET]
+  Parameters: {"id"=>"104058331"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (1.0ms)[0m   [0mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mFollow Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (3.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 175ms (View: 82, DB: 22) | 200 OK [http://localhost/users/104058331.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 08:48:21) [GET]
+  Parameters: {"id"=>"3551ebb07e56acc2"}
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (1.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mFollow Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `follows`[0m
+  [4;36;1mQuestion Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (3.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 177ms (View: 80, DB: 22) | 200 OK [http://localhost/users/3551ebb07e56acc2]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show to html (for 127.0.0.1 at 2010-06-03 08:48:28) [GET]
+  Parameters: {"id"=>"104058331"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (1.0ms)[0m   [0mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mFollow Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 281ms (View: 193, DB: 22) | 200 OK [http://localhost/users/104058331.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show to html (for 127.0.0.1 at 2010-06-03 08:51:42) [GET]
+  Parameters: {"id"=>"104058331"}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (1.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mFollow Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `follows`[0m
+  [4;36;1mQuestion Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 156ms (View: 78, DB: 20) | 200 OK [http://localhost/users/104058331.html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:51:46) [GET]
+  Parameters: {"from"=>"4", "id"=>"104058331.html"}
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '4' and questions.url = '104058331.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (0.0ms)[0m   [0mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =10) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1039ms (View: 98, DB: 11) | 200 OK [http://localhost/show/?from=4&id=104058331.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:51:51) [GET]
+  Parameters: {"from"=>"2", "id"=>"3551ebb07e56acc2"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '2' and questions.url = '3551ebb07e56acc2') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (1.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =9) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1375ms (View: 88, DB: 14) | 200 OK [http://localhost/show/?from=2&id=3551ebb07e56acc2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 08:51:53) [GET]
+
+ActionController::RoutingError (No route matches "/wenda/images/v1274326737/level_1.png" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 08:53:56) [GET]
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 56ms (DB: 7) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:53:56) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 41ms (View: 20, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:54:00) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 340ms (View: 23, DB: 2) | 200 OK [http://localhost/?from=1&category=1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:54:03) [GET]
+  Parameters: {"from"=>"1", "id"=>"155868936.html"}
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '155868936.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1057ms (View: 44, DB: 8) | 200 OK [http://localhost/show/?from=1&id=155868936.html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 08:54:05) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"51", "y"=>"19", "authenticity_token"=>"JN0OnjXh42cRcuRqEODjMuPcrG8nNlGj/Yz5MmMw/b0=", "question"=>{"min_title"=>"\r\n怎么才能学好环评？？？", "category"=>"1", "from"=>"1", "url"=>"155868936.html", "is_display"=>"true", "sort_id"=>"1"}}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/questions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:54:06) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 24ms (View: 19, DB: 1) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:54:15) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"JN0OnjXh42cRcuRqEODjMuPcrG8nNlGj/Yz5MmMw/b0=", "login"=>"lanlan", "password"=>"lanlan", "remember_me"=>"on"}
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Redirected to http://localhost:3000/questions
+  [4;35;1mLog Columns (14.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLog Create (0.0ms)[0m   [0mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 00:54:15', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 08:54:15到访过知道问!', '2010-06-03 00:54:15')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 136ms (DB: 61) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-06-03 08:54:15) [GET]
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` [0m
+Rendering template within layouts/application
+Rendering questions/index
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 434ms (View: 398, DB: 13) | 200 OK [http://localhost/questions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-06-03 08:55:43) [GET]
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` [0m
+Rendering template within layouts/application
+Rendering questions/index
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 118ms (View: 89, DB: 11) | 200 OK [http://localhost/questions]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-06-03 08:57:53) [GET]
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` [0m
+Rendering template within layouts/application
+Rendering questions/index
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 137ms (View: 108, DB: 10) | 200 OK [http://localhost/questions]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:58:09) [GET]
+  Parameters: {"from"=>"1", "id"=>"152168913.html"}
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '152168913.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (0.0ms)[0m   [0mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =1) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1109ms (View: 114, DB: 13) | 200 OK [http://localhost/show/?from=1&id=152168913.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#update (for 127.0.0.1 at 2010-06-03 08:58:16) [PUT]
+  Parameters: {"question_user_id"=>"2", "x"=>"51", "y"=>"21", "authenticity_token"=>"JN0OnjXh42cRcuRqEODjMuPcrG8nNlGj/Yz5MmMw/b0=", "id"=>"1", "question"=>{"min_title"=>"\r\n这是月经麽", "category"=>"1", "from"=>"1", "url"=>"152168913.html", "is_display"=>"true", "sort_id"=>"1"}}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mQuestion Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 1) [0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mQuestion Update (87.0ms)[0m   [0mUPDATE `questions` SET `updated_at` = '2010-06-03 00:58:17', `min_title` = '\r\n这是月经麽' WHERE `id` = 1[0m
+  [4;36;1mSQL (58.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/questions/1
+Completed in 259ms (DB: 162) | 302 Found [http://localhost/questions/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#show (for 127.0.0.1 at 2010-06-03 08:58:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mQuestion Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering questions/show
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 140ms (View: 101, DB: 12) | 200 OK [http://localhost/questions/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:58:41) [GET]
+  Parameters: {"from"=>"1", "id"=>"152168913.html"}
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '152168913.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (0.0ms)[0m   [0mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =1) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1028ms (View: 111, DB: 13) | 200 OK [http://localhost/show/?from=1&id=152168913.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 08:58:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (0.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mFollow Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `follows`[0m
+  [4;36;1mQuestion Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 260ms (View: 60, DB: 17) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#update (for 127.0.0.1 at 2010-06-03 08:58:58) [PUT]
+  Parameters: {"question_user_id"=>"2", "x"=>"43", "y"=>"18", "authenticity_token"=>"JN0OnjXh42cRcuRqEODjMuPcrG8nNlGj/Yz5MmMw/b0=", "id"=>"1", "question"=>{"min_title"=>"\r\n这是月经麽", "category"=>"1", "from"=>"1", "url"=>"152168913.html", "is_display"=>"true", "sort_id"=>"1"}}
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 1) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/questions/1
+Completed in 86ms (DB: 13) | 302 Found [http://localhost/questions/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#show (for 127.0.0.1 at 2010-06-03 08:58:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mQuestion Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering questions/show
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (2.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 128ms (View: 87, DB: 14) | 200 OK [http://localhost/questions/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 08:59:27) [GET]
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 72ms (DB: 6) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:59:27) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 69ms (View: 34, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:59:30) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1342ms (View: 24, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:59:33) [GET]
+  Parameters: {"from"=>"1", "id"=>"153751052.html"}
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '153751052.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 1230ms (View: 31, DB: 8) | 200 OK [http://localhost/show/?from=1&id=153751052.html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 08:59:36) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"48", "y"=>"17", "authenticity_token"=>"aNSiy5arJcLLwJsWuXlBdRC7ouBLetFpMP/ybH8f38c=", "question"=>{"min_title"=>"\r\n三斤多重的野生甲鱼现在的市场价格大概多少?", "category"=>"1", "from"=>"1", "url"=>"153751052.html", "is_display"=>"true", "sort_id"=>"1"}}
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 7ms (DB: 1) | 302 Found [http://localhost/questions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 08:59:38) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 08:59:46) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"aNSiy5arJcLLwJsWuXlBdRC7ouBLetFpMP/ybH8f38c=", "login"=>"lanlan", "password"=>"lanlan", "remember_me"=>"on"}
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Redirected to http://localhost:3000/questions
+  [4;35;1mLog Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLog Create (0.0ms)[0m   [0mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 00:59:47', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 08:59:47到访过知道问!', '2010-06-03 00:59:47')[0m
+  [4;36;1mSQL (25.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 118ms (DB: 37) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#index (for 127.0.0.1 at 2010-06-03 08:59:47) [GET]
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` [0m
+Rendering template within layouts/application
+Rendering questions/index
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 127ms (View: 91, DB: 14) | 200 OK [http://localhost/questions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 08:59:52) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 380ms (View: 79, DB: 6) | 200 OK [http://localhost/?from=1&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:59:53) [GET]
+  Parameters: {"from"=>"1", "id"=>"153956866.html"}
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '153956866.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (3.0ms)[0m   [0mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =NULL) LIMIT 1[0m
+Rendered layouts/_footer (2.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1008ms (View: 217, DB: 16) | 200 OK [http://localhost/show/?from=1&id=153956866.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 08:59:58) [POST]
+  Parameters: {"question_user_id"=>"2", "x"=>"45", "y"=>"12", "authenticity_token"=>"aNSiy5arJcLLwJsWuXlBdRC7ouBLetFpMP/ybH8f38c=", "question"=>{"min_title"=>"\r\n邮箱如何限制下载日期", "category"=>"1", "from"=>"1", "url"=>"153956866.html", "is_display"=>"true", "sort_id"=>"1"}}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuestion Create (0.0ms)[0m   [0;1mINSERT INTO `questions` (`min_title`, `category`, `updated_at`, `from`, `url`, `original_url`, `sort_id`, `is_display`, `max_title`, `created_at`) VALUES('\r\n邮箱如何限制下载日期', 1, '2010-06-03 00:59:58', 1, '153956866.html', NULL, 1, 1, NULL, '2010-06-03 00:59:58')[0m
+  [4;35;1mSQL (45.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFollow Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFollow Create (0.0ms)[0m   [0;1mINSERT INTO `follows` (`updated_at`, `question_id`, `user_id`, `created_at`) VALUES('2010-06-03 00:59:58', 11, 2, '2010-06-03 00:59:58')[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mLog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLog Create (0.0ms)[0m   [0;1mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 00:59:58', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 08:59:58关注了问答:<a target=\'_blank\' href=\'/show/?from=1&id=153956866.html\'>\r\n邮箱如何限制下载日期</a>', '2010-06-03 00:59:58')[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/show/?from=1&id=153956866.html
+Completed in 311ms (DB: 152) | 302 Found [http://localhost/questions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 08:59:59) [GET]
+  Parameters: {"from"=>"1", "id"=>"153956866.html"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '153956866.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (1.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =11) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1276ms (View: 104, DB: 10) | 200 OK [http://localhost/show/?from=1&id=153956866.html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:02:45) [GET]
+  Parameters: {"from"=>"1", "id"=>"153956866.html"}
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '153956866.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (1.0ms)[0m   [0mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =11) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 976ms (View: 108, DB: 14) | 200 OK [http://localhost/show/?from=1&id=153956866.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:03:21) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (18.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 56ms (View: 20, DB: 20) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:03:32) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 466ms (View: 140, DB: 1) | 200 OK [http://127.0.0.1/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:03:36) [GET]
+  Parameters: {"from"=>"1", "id"=>"155743274.html"}
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '155743274.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1073ms (View: 36, DB: 5) | 200 OK [http://127.0.0.1/show/?from=1&id=155743274.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 09:03:42) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"57", "y"=>"18", "authenticity_token"=>"0VgIzosW7Rg8jehXo5yQES8bHai2ddoQ3ontCpCAdd8=", "question"=>{"min_title"=>"\r\n百度有啊！这个世界这么不公平啊", "category"=>"1", "from"=>"1", "url"=>"155743274.html", "is_display"=>"true", "sort_id"=>"1"}}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 18ms (View: 5, DB: 1) | 401 Unauthorized [http://127.0.0.1/questions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 09:03:48) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"57", "y"=>"18", "authenticity_token"=>"0VgIzosW7Rg8jehXo5yQES8bHai2ddoQ3ontCpCAdd8=", "question"=>{"min_title"=>"\r\n百度有啊！这个世界这么不公平啊", "category"=>"1", "from"=>"1", "url"=>"155743274.html", "is_display"=>"true", "sort_id"=>"1"}}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+  [4;36;1mQuestion Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuestion Create (1.0ms)[0m   [0;1mINSERT INTO `questions` (`min_title`, `category`, `updated_at`, `from`, `url`, `original_url`, `sort_id`, `is_display`, `max_title`, `created_at`) VALUES('\r\n百度有啊！这个世界这么不公平啊', 1, '2010-06-03 01:03:48', 1, '155743274.html', NULL, 1, 1, NULL, '2010-06-03 01:03:48')[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFollow Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFollow Create (0.0ms)[0m   [0;1mINSERT INTO `follows` (`updated_at`, `question_id`, `user_id`, `created_at`) VALUES('2010-06-03 01:03:48', 12, 2, '2010-06-03 01:03:48')[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mLog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLog Create (1.0ms)[0m   [0;1mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 01:03:49', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 09:03:49关注了问答:<a target=\'_blank\' href=\'/show/?from=1&id=155743274.html\'>\r\n百度有啊！这个世界这么不公平啊</a>', '2010-06-03 01:03:49')[0m
+  [4;35;1mSQL (42.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/show/?from=1&id=155743274.html
+Completed in 418ms (DB: 150) | 302 Found [http://127.0.0.1/questions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:03:49) [GET]
+  Parameters: {"from"=>"1", "id"=>"155743274.html"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '155743274.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (1.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =12) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 1252ms (View: 266, DB: 14) | 200 OK [http://127.0.0.1/show/?from=1&id=155743274.html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:04:07) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (2.0ms)
+Completed in 274ms (View: 209, DB: 10) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:04:56) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 101ms (View: 73, DB: 13) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:05:36) [GET]
+  Parameters: {"from"=>"1", "id"=>"153956866.html"}
+  [4;35;1mQuestion Load (3.0ms)[0m   [0mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '153956866.html') LIMIT 1[0m
+  [4;36;1mQuestion Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (0.0ms)[0m   [0mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =11) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1129ms (View: 96, DB: 19) | 200 OK [http://localhost/show/?from=1&id=153956866.html]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:05:37) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mUser Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 222ms (View: 176, DB: 14) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:10:39) [GET]
+  [4;36;1mLog Load (5.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 45ms (View: 19, DB: 9) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:10:39) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:11:19) [GET]
+  Parameters: {"category"=>"1", "from"=>"1"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 496ms (View: 32, DB: 1) | 200 OK [http://localhost/?from=1&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:11:20) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:11:31) [GET]
+  Parameters: {"from"=>"1", "id"=>"131423970.html"}
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '131423970.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 997ms (View: 43, DB: 9) | 200 OK [http://localhost/show/?from=1&id=131423970.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:11:33) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 09:12:39) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"46", "y"=>"17", "authenticity_token"=>"nUfqpLZRLrJFtW29iC/8IvEHGempFYlXeRfjA3NSass=", "question"=>{"min_title"=>"\r\n每一张的新版火车票的二维码是不是都一样？", "category"=>"1", "from"=>"1", "url"=>"131423970.html", "is_display"=>"true", "sort_id"=>"1"}}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 8ms (View: 5, DB: 0) | 401 Unauthorized [http://localhost/questions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 09:12:51) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"46", "y"=>"17", "authenticity_token"=>"nUfqpLZRLrJFtW29iC/8IvEHGempFYlXeRfjA3NSass=", "question"=>{"min_title"=>"\r\n每一张的新版火车票的二维码是不是都一样？", "category"=>"1", "from"=>"1", "url"=>"131423970.html", "is_display"=>"true", "sort_id"=>"1"}}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+  [4;36;1mQuestion Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuestion Create (1.0ms)[0m   [0;1mINSERT INTO `questions` (`min_title`, `category`, `updated_at`, `from`, `url`, `original_url`, `sort_id`, `is_display`, `max_title`, `created_at`) VALUES('\r\n每一张的新版火车票的二维码是不是都一样？', 1, '2010-06-03 01:12:51', 1, '131423970.html', NULL, 1, 1, NULL, '2010-06-03 01:12:51')[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mFollow Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mFollow Create (1.0ms)[0m   [0;1mINSERT INTO `follows` (`updated_at`, `question_id`, `user_id`, `created_at`) VALUES('2010-06-03 01:12:51', 13, 2, '2010-06-03 01:12:51')[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLog Create (0.0ms)[0m   [0;1mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 01:12:51', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 09:12:51关注了问答:<a target=\'_blank\' href=\'/show/?from=1&id=131423970.html\'>\r\n每一张的新版火车票的二维码是不是都一样？</a>', '2010-06-03 01:12:51')[0m
+  [4;35;1mSQL (32.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/show/?from=1&id=131423970.html
+Completed in 238ms (DB: 125) | 302 Found [http://localhost/questions]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:12:51) [GET]
+  Parameters: {"from"=>"1", "id"=>"131423970.html"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '1' and questions.url = '131423970.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mFollow Load (1.0ms)[0m   [0;1mSELECT * FROM `follows` WHERE (follows.user_id=2 and follows.question_id =13) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1173ms (View: 85, DB: 15) | 200 OK [http://localhost/show/?from=1&id=131423970.html]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:12:52) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 09:12:55) [GET]
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 64ms (DB: 8) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:12:56) [GET]
+  [4;35;1mLog Load (0.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 97ms (View: 68, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:12:56) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:12:58) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 521ms (View: 70, DB: 5) | 200 OK [http://localhost/?from=3&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:12:59) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:13:02) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 405ms (View: 64, DB: 8) | 200 OK [http://localhost/?from=5&category=1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:02) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 09:13:06) [GET]
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 55ms (DB: 6) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:13:06) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 89ms (View: 62, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:06) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:13:10) [GET]
+  Parameters: {"category"=>"1", "from"=>"2"}
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mUser Columns (23.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 965ms (View: 78, DB: 24) | 200 OK [http://localhost/?from=2&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:11) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 09:13:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (1.0ms)[0m   [0mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mFollow Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mQuestion Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 13) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 12) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 11) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 147ms (View: 66, DB: 23) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:16) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 09:13:21) [GET]
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 58ms (DB: 5) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:13:22) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 86ms (View: 61, DB: 10) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:22) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:13:25) [GET]
+  [4;35;1mLog Load (0.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 91ms (View: 61, DB: 13) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:25) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 09:13:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mFollow Load (1.0ms)[0m   [0mSELECT * FROM `follows` WHERE (user_id = 2) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mFollow Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `follows`[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 13) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 12) [0m
+  [4;36;1mQuestion Load (0.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 11) [0m
+  [4;35;1mQuestion Load (0.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 10) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 9) [0m
+  [4;35;1mQuestion Load (1.0ms)[0m   [0mSELECT * FROM `questions` WHERE (`questions`.`id` = 8) [0m
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (`questions`.`id` = 7) [0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 145ms (View: 68, DB: 21) | 200 OK [http://localhost/users/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:30) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 09:13:40) [GET]
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 73ms (View: 63, DB: 8) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:41) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-03 09:13:44) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "sex"=>"0", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"注 册", "authenticity_token"=>"RTRTZxygCSnnG0kp4vZQWBnyjRoeIHCqRg9Q/GavGnQ="}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: sex
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY '') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 128ms (View: 65, DB: 7) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:13:45) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-03 09:13:59) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"aaaaaa", "sex"=>"0", "password"=>"aaaaaa", "login"=>"aaaaaa", "email"=>"aaa@2424.com"}, "commit"=>"注 册", "authenticity_token"=>"RTRTZxygCSnnG0kp4vZQWBnyjRoeIHCqRg9Q/GavGnQ="}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+WARNING: Can't mass-assign these protected attributes: sex
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'aaaaaa') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'aaa@2424.com') LIMIT 1[0m
+  [4;35;1mUser Create (1.0ms)[0m   [0mINSERT INTO `users` (`salt`, `updated_at`, `crypted_password`, `remember_token_expires_at`, `sex`, `remember_token`, `login`, `email`, `created_at`) VALUES('2640d82cbe6e5b79c1fe2bda4177644230518724', '2010-06-03 01:14:00', 'fda8aa58b6bc7e415df886bacb8c5b5bfae84ac8', NULL, NULL, NULL, 'aaaaaa', 'aaa@2424.com', '2010-06-03 01:14:00')[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/3
+  [4;35;1mLog Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLog Create (15.0ms)[0m   [0mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 01:14:00', '欢迎<a target=\'_blank\' href=\'users/3\'>aaaaaa</a>在2010-06-03 09:14:00成为知道问的会员!', '2010-06-03 01:14:00')[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 585ms (DB: 124) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-06-03 09:14:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [4;35;1mFollow Load (0.0ms)[0m   [0mSELECT * FROM `follows` WHERE (user_id = 3) ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 82ms (View: 19, DB: 7) | 200 OK [http://localhost/users/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:00) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:14:04) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 427ms (View: 66, DB: 6) | 200 OK [http://localhost/?from=5&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:05) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:14:09) [GET]
+  Parameters: {"from"=>"5", "id"=>"17086005.html"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '5' and questions.url = '17086005.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 826ms (View: 25, DB: 7) | 200 OK [http://localhost/show/?from=5&id=17086005.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:11) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#create (for 127.0.0.1 at 2010-06-03 09:14:19) [POST]
+  Parameters: {"question_user_id"=>"0", "x"=>"62", "y"=>"13", "authenticity_token"=>"Vrc8tJWeVyRshAIlMzdPMjBGkdSiBqAbN607rXUcdjY=", "question"=>{"min_title"=>"现在如果买了权证的580024放上半年会有什么结果呢", "category"=>"1", "from"=>"5", "url"=>"17086005.html", "is_display"=>"true", "sort_id"=>"1"}}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 7ms (View: 4, DB: 0) | 401 Unauthorized [http://localhost/questions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#show (for 127.0.0.1 at 2010-06-03 09:14:28) [GET]
+  Parameters: {"from"=>"5", "id"=>"17086005.html"}
+  [4;36;1mQuestion Load (1.0ms)[0m   [0;1mSELECT * FROM `questions` WHERE (questions.from = '5' and questions.url = '17086005.html') LIMIT 1[0m
+  [4;35;1mQuestion Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering welcome/show
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 833ms (View: 26, DB: 7) | 200 OK [http://localhost/show/?from=5&id=17086005.html]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:29) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 09:14:31) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:31) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 09:14:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:33) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:14:35) [GET]
+  Parameters: {"category"=>"1", "from"=>"5"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 354ms (View: 21, DB: 0) | 200 OK [http://localhost/?from=5&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:36) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 09:14:37) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:37) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:14:39) [GET]
+  Parameters: {"category"=>"1", "from"=>"3"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 598ms (View: 26, DB: 2) | 200 OK [http://localhost/?from=3&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:40) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 09:14:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-03 09:14:41) [GET]
+
+ActionController::RoutingError (No route matches "/css/patches/patch_2col_right_13.css" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 09:14:52) [GET]
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 66ms (DB: 9) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:14:53) [GET]
+  [4;36;1mLog Load (1.0ms)[0m   [0;1mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;35;1mLog Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 45ms (View: 22, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:14:57) [GET]
+  Parameters: {"category"=>"1", "from"=>"4"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 607ms (View: 28, DB: 0) | 200 OK [http://localhost/?from=4&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:15:00) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:15:06) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 5095ms (View: 31, DB: 1) | 200 OK [http://localhost/?from=6&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:15:14) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:16:39) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1754ms (View: 37, DB: 0) | 200 OK [http://localhost/?from=6&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:16:45) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"HdJem80H43pda7jtVeeqoP+vTkHjTD922Gn8f2TovfQJo=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:17:22) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 7078ms (View: 32, DB: 2) | 200 OK [http://localhost/?from=6&category=1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:17:33) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"333=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (262.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:17:40) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"333=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (152.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:17:51) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"333=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (158.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:20:07) [GET]
+  Parameters: {"category"=>"1", "from"=>"6"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 1165ms (View: 30, DB: 0) | 200 OK [http://localhost/?from=6&category=1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:20:13) [POST]
+  Parameters: {"commit"=>"登录", "request_forgery_protection_token"=>"333=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (267.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#new (for 127.0.0.1 at 2010-06-03 09:20:47) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/questions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 09:20:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:21:06) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"CZwRkqWHGjPDBaJTc5Z+11fBgvagIOwVFJC43idVKy4=", "login"=>"lanlan", "password"=>"lanlan", "remember_me"=>"on"}
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'lanlan') LIMIT 1[0m
+Redirected to http://localhost:3000/questions/new
+  [4;36;1mLog Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLog Create (1.0ms)[0m   [0;1mINSERT INTO `logs` (`updated_at`, `text`, `created_at`) VALUES('2010-06-03 01:21:06', '<a target=\'_blank\' href=\'users/2\'>lanlan</a>在2010-06-03 09:21:06到访过知道问!', '2010-06-03 01:21:06')[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mCOMMIT[0m
+Completed in 127ms (DB: 55) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#new (for 127.0.0.1 at 2010-06-03 09:21:07) [GET]
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;36;1mQuestion Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+Rendering template within layouts/application
+Rendering questions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 171ms (View: 98, DB: 15) | 200 OK [http://localhost/questions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-06-03 09:23:45) [GET]
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 70ms (DB: 6) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:23:45) [GET]
+  [4;35;1mLog Load (1.0ms)[0m   [0mSELECT * FROM `logs` ORDER BY created_at desc LIMIT 30[0m
+Rendering template within layouts/application
+Rendering tips/a
+  [4;36;1mLog Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `logs`[0m
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 45ms (View: 21, DB: 7) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-03 09:23:53) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-06-03 09:24:38) [GET]
+  Parameters: {"category"=>"1", "from"=>"2"}
+Rendering template within layouts/application
+Rendering welcome/index
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 1093ms (View: 39, DB: 1) | 200 OK [http://localhost/?from=2&category=1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-03 09:24:42) [POST]
+  Parameters: {"commit"=>"登录", "authenticity_token"=>"ljjdg7eKyTLsxZue6oxzm4Pijgp2K5haoaBP24SytS4=", "login"=>"", "password"=>"", "remember_me"=>"on"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (0.0ms)
+Completed in 82ms (View: 30, DB: 8) | 200 OK [http://localhost/session]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-06-03 09:24:52) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"", "sex"=>"0", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"注 册", "authenticity_token"=>"HdJem80H43pda7jtVqoP+vTkHjTD922Gn8f2TovfQJo="}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-06-03 09:24:58) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_ajax_login (1.0ms)
+Completed in 26ms (View: 22, DB: 2) | 200 OK [http://localhost/signup]
